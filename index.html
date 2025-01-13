@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Google Sheets Mimic</title>
+</head>
+<body>
+    <div id="spreadsheet">
+        <div id="toolbar">
+            <button id="addRow">Add Row</button>
+            <button id="deleteRow">Delete Row</button>
+            <button id="saveData">Save Data</button>
+            <button id="removeDuplicates">Remove Duplicates</button>
+            <button id="findAndReplace">Find & Replace</button>
+        </div>
+        <div id="formula-bar">
+            <input type="text" id="formulaInput" placeholder="Enter formula...">
+        </div>
+        <table id="sheet">
+            <thead>
+                <tr>
+                    <th>Column A</th>
+                    <th>Column B</th>
+                    <th>Column C</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be added here dynamically -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
